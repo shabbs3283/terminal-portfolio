@@ -1,0 +1,43 @@
+<style>
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    
+    font-weight: bold;
+  }
+  .nav-links {
+    display: flex;
+    gap: 1rem;
+  }
+  .card-grid {
+  display: grid;
+  /* repeat(auto-fit, minmax(minimum-width, fraction-of-remaining-space)) */
+  grid-template-columns: repeat(auto-fit, minmax(280px, 2fr));
+  
+  gap: 1.5rem;
+}
+.card {
+  background-color: red;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+}
+</style>
+<header class="navbar">
+  <div class="logo">MyBrand</div>
+  <nav class="nav-links">
+    <a href="#">Home</a>
+    <a href="#">Pricing</a>
+    <a href="#">Contact</a>
+  </nav>
+</header>
+<div class="card-grid">
+  <div class="card">Card 1</div>
+  <div class="card">Card 2</div>
+  <div class="card">Card 3</div>
+  <div class="card">Card 4</div>
+  <div class="card">Card 5</div>
+  <div class="card">Card 6</div>
+</div>
